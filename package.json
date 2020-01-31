@@ -1,0 +1,45 @@
+{
+  "name": "@tomera/prettier-config",
+  "version": "1.0.0",
+  "author": "Tomer Aberbach <tomeraberbach@gmail.com> (https://tomeraberba.ch)",
+  "description": "My Prettier configuration!",
+  "keywords": [
+    "prettier",
+    "lint",
+    "configuration",
+    "config"
+  ],
+  "homepage": "https://github.com/TomerAberbach/prettier-config",
+  "repository": "TomerAberbach/prettier-config",
+  "bugs": {
+    "url": "https://github.com/TomerAberbach/prettier-config/issues"
+  },
+  "license": "MIT",
+  "files": [
+    "lib/**/*"
+  ],
+  "main": "lib/main/index.js",
+  "module": "lib/module/index.js",
+  "scripts": {
+    "lint": "prettier --ignore-path .gitignore --write '{{{src,test}/**,.}/*.{js,json,md},.{prettier,babel}rc}'",
+    "build:main": "cross-env BABEL_ENV=main babel -D src -d lib/main",
+    "build:module": "cross-env BABEL_ENV=module babel -D src -d lib/module",
+    "build": "run-p build:*",
+    "clean": "rimraf lib",
+    "prepublishOnly": "run-s lint build"
+  },
+  "peerDependencies": {
+    "prettier": "^1.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.3",
+    "@tomera/babel-preset-node": "^2.0.1",
+    "cross-env": "^7.0.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^1.19.1"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  }
+}

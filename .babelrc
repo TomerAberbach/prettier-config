@@ -1,0 +1,27 @@
+{
+  "env": {
+    "main": {
+      "presets": [
+        [
+          "@tomera/node",
+          {
+            "module": "commonjs",
+            "support": "legacy"
+          }
+        ]
+      ]
+    },
+    "module": {
+      "presets": [
+        [
+          "@tomera/node",
+          {
+            "module": false,
+            "fill": false,
+            "support": "modern"
+          }
+        ]
+      ]
+    }
+  }
+}
