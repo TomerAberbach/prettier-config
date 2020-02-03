@@ -34,6 +34,7 @@
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.8.3",
+    "@babel/plugin-transform-modules-commonjs": "^7.8.3",
     "@tomera/babel-preset-node": "^2.0.1",
     "cross-env": "^7.0.0",
     "npm-run-all": "^4.1.5",

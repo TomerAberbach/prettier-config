@@ -5,11 +5,14 @@
         [
           "@tomera/node",
           {
-            "module": "commonjs",
+            "module": false,
             "support": "legacy"
           }
         ]
-      ]
+      ],
+      "plugins": [["@babel/transform-modules-commonjs", {
+        "strict": true
+      }]]
     },
     "module": {
       "presets": [
