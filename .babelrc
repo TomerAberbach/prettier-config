@@ -10,9 +10,14 @@
           }
         ]
       ],
-      "plugins": [["@babel/transform-modules-commonjs", {
-        "strict": true
-      }]]
+      "plugins": [
+        [
+          "@babel/transform-modules-commonjs",
+          {
+            "strict": true
+          }
+        ]
+      ]
     },
     "module": {
       "presets": [
