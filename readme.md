@@ -17,7 +17,7 @@ to `@tomer/prettier-config`:
 
 ```json
 {
-  "prettier": "@tomera/prettier-config"
+  "prettier": "@tomer/prettier-config"
 }
 ```
 
