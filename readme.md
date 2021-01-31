@@ -25,4 +25,4 @@ Run `prettier` with [the supported options](https://prettier.io/docs/en/cli.html
 
 ## License
 
-[MIT](https://github.com/TomerAberbach/prettier-config/blob/master/license) © [Tomer Aberbach](https://github.com/TomerAberbach)
+[MIT](https://github.com/TomerAberbach/prettier-config/blob/main/license) © [Tomer Aberbach](https://github.com/TomerAberbach)
