@@ -2,7 +2,6 @@ devDependencies:
   '@commitlint/cli': 11.0.0
   '@commitlint/config-conventional': 11.0.0
   '@tomer/eslint-config': 0.1.0_eslint@7.19.0
-  '@tomer/prettier-config': 0.0.2_prettier@2.2.1
   ava: 3.15.0
   c8: 7.4.0
   eslint: 7.19.0
@@ -295,14 +294,6 @@ packages:
       eslint: ^7.0.0
     resolution:
       integrity: sha512-qpIzWPwftIuoa3YWhGifw3YRkVxXE4QrxarwxEcJYRw64gDZuXsShF1BrAWHXcLZWbb7pX+FOkBSqgzWOAg9YQ==
-  /@tomer/prettier-config/0.0.2_prettier@2.2.1:
-    dependencies:
-      prettier: 2.2.1
-    dev: true
-    peerDependencies:
-      prettier: ^2.0.0
-    resolution:
-      integrity: sha512-iTnQCgnsgcJi5+wvv6dF+Drxame9YlRpUCKsGHncuq/Qx5UEBYybfxW/8NF1+YoaJMDMHKHJbHSzgxyWFSV8Ig==
   /@types/is-windows/1.0.0:
     dev: true
     resolution:
@@ -4369,7 +4360,6 @@ specifiers:
   '@commitlint/cli': 11.0.0
   '@commitlint/config-conventional': 11.0.0
   '@tomer/eslint-config': 0.1.0
-  '@tomer/prettier-config': 0.0.2
   ava: 3.15.0
   c8: 7.4.0
   eslint: 7.19.0
