@@ -4,7 +4,7 @@
 
 <div align="center">
   <a href="https://npmjs.org/package/@tomer/prettier-config">
-    <img src="https://badgen.now.sh/npm/v/prettier-config" alt="version" />
+    <img src="https://badgen.now.sh/npm/v/@tomer/prettier-config" alt="version" />
   </a>
   <a href="https://github.com/TomerAberbach/prettier-config/actions">
     <img src="https://github.com/TomerAberbach/prettier-config/workflows/CI/badge.svg" alt="CI" />
