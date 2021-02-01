@@ -1,6 +1,22 @@
-# Prettier Config
+<h1 align="center">
+  prettier-config
+</h1>
 
-> My [Prettier](https://prettier.io) configuration!
+<div align="center">
+  <a href="https://npmjs.org/package/prettier-config">
+    <img src="https://badgen.now.sh/npm/v/prettier-config" alt="version" />
+  </a>
+  <a href="https://github.com/TomerAberbach/prettier-config/actions">
+    <img src="https://github.com/TomerAberbach/prettier-config/workflows/CI/badge.svg" alt="CI" />
+  </a>
+  <a href="https://bundlephobia.com/result?p=prettier-config">
+    <img src="https://badgen.net/bundlephobia/minzip/prettier-config" alt="minzip size" />
+  </a>
+</div>
+
+<div align="center">
+  My Prettier configuration!
+</div>
 
 ## Install
 
@@ -10,8 +26,9 @@ $ npm i @tomer/prettier-config
 
 ## Usage
 
-Set the [`"prettier"` field](https://prettier.io/docs/en/configuration.html#sharing-configurations) of your `package.json`
-to `@tomer/prettier-config`:
+Set the
+[`"prettier"` field](https://prettier.io/docs/en/configuration.html#sharing-configurations)
+of your `package.json` to `@tomer/prettier-config`:
 
 **package.json**
 
@@ -21,8 +38,17 @@ to `@tomer/prettier-config`:
 }
 ```
 
-Run `prettier` with [the supported options](https://prettier.io/docs/en/cli.html).
+Run `prettier` with
+[the supported options](https://prettier.io/docs/en/cli.html).
+
+## Contributing
+
+Stars are always welcome!
+
+For bugs and feature requests,
+[please create an issue](https://github.com/TomerAberbach/prettier-config/issues/new).
 
 ## License
 
-[MIT](https://github.com/TomerAberbach/prettier-config/blob/main/license) © [Tomer Aberbach](https://github.com/TomerAberbach)
+[MIT](https://github.com/TomerAberbach/prettier-config/blob/main/license) ©
+[Tomer Aberbach](https://github.com/TomerAberbach)
