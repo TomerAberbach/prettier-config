@@ -6,12 +6,12 @@ module.exports = {
   singleQuote: true,
   quoteProps: `as-needed`,
   jsxSingleQuote: true,
-  trailingComma: `none`,
+  trailingComma: `all`,
   bracketSpacing: true,
   jsxBracketSameLine: false,
   arrowParens: `avoid`,
   proseWrap: `always`,
   htmlWhitespaceSensitivity: `ignore`,
   endOfLine: `lf`,
-  embeddedLanguageFormatting: `auto`
+  embeddedLanguageFormatting: `auto`,
 }
