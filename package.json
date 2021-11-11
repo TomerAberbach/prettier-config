@@ -7,7 +7,10 @@
     "url": "https://tomeraberba.ch"
   },
   "description": "My Prettier configuration!",
-  "keywords": [],
+  "keywords": [
+    "prettier",
+    "prettier-config"
+  ],
   "homepage": "https://github.com/TomerAberbach/prettier-config",
   "repository": "TomerAberbach/prettier-config",
   "bugs": {
@@ -22,47 +25,15 @@
   },
   "main": "index.js",
   "scripts": {
-    "lint:prettier:base": "prettier --loglevel silent --ignore-path .gitignore",
-    "lint:prettier": "run-s \"lint:prettier:base -- --write .\"",
-    "lint:eslint:base": "eslint --cache --ext \"js,mjs\" --ignore-path .gitignore",
-    "lint:eslint": "run-s \"lint:eslint:base -- --fix .\"",
-    "lint": "run-s lint:*",
-    "test": "ava",
-    "coverage": "c8 run-s test"
-  },
-  "prettier": "./index.js",
-  "eslintConfig": {
-    "extends": "@tomer"
-  },
-  "lint-staged": {
-    "*.{js,mjs}": [
-      "run-s \"lint:prettier:base -- --write {@}\" --",
-      "run-s \"lint:eslint:base -- --fix {@}\" --"
-    ],
-    "*.{json,yml,md}": "run-s \"lint:prettier:base -- --write {@}\" --"
-  },
-  "commitlint": {
-    "extends": "@commitlint/config-conventional"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
+    "prepare": "tomer install",
+    "lint": "tomer lint",
+    "test": "tomer test"
   },
   "peerDependencies": {
     "prettier": "^2.0.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "11.0.0",
-    "@commitlint/config-conventional": "11.0.0",
-    "@tomer/eslint-config": "0.1.0",
     "ava": "3.15.0",
-    "c8": "7.4.0",
-    "eslint": "7.19.0",
-    "husky": "4.3.8",
-    "lint-staged": "10.5.3",
-    "npm-run-all": "4.1.5",
-    "prettier": "2.2.1"
+    "tomer": "0.0.17"
   }
 }
