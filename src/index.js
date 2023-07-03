@@ -18,4 +18,12 @@ module.exports = {
   importOrderSeparation: false,
   importOrderSortSpecifiers: true,
   plugins: [`@trivago/prettier-plugin-sort-imports`],
+  overrides: [
+    {
+      files: `*.d.ts`,
+      options: {
+        importOrderParserPlugins: [`["typescript", { "dts": true }]`],
+      },
+    },
+  ],
 }
