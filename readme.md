@@ -9,9 +9,6 @@
   <a href="https://github.com/TomerAberbach/prettier-config/actions">
     <img src="https://github.com/TomerAberbach/prettier-config/workflows/CI/badge.svg" alt="CI" />
   </a>
-  <a href="https://bundlephobia.com/result?p=@tomer/prettier-config">
-    <img src="https://badgen.net/bundlephobia/minzip/@tomer/prettier-config" alt="minzip size" />
-  </a>
 </div>
 
 <div align="center">

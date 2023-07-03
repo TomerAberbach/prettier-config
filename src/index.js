@@ -14,4 +14,8 @@ module.exports = {
   htmlWhitespaceSensitivity: `ignore`,
   endOfLine: `lf`,
   embeddedLanguageFormatting: `auto`,
+  importOrder: [`^[./]`],
+  importOrderSeparation: false,
+  importOrderSortSpecifiers: true,
+  plugins: [`@trivago/prettier-plugin-sort-imports`],
 }

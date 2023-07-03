@@ -31,6 +31,10 @@
     "lint": "tomer lint",
     "test": "tomer test"
   },
+  "prettier": "./src/index.js",
+  "dependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^4.1.1"
+  },
   "peerDependencies": {
     "prettier": "^2"
   },
