@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   printWidth: 80,
   tabWidth: 2,
   useTabs: false,
@@ -14,16 +14,5 @@ module.exports = {
   htmlWhitespaceSensitivity: `ignore`,
   endOfLine: `lf`,
   embeddedLanguageFormatting: `auto`,
-  importOrder: [`^[./]`],
-  importOrderSeparation: false,
-  importOrderSortSpecifiers: true,
-  plugins: [`@trivago/prettier-plugin-sort-imports`],
-  overrides: [
-    {
-      files: `*.d.ts`,
-      options: {
-        importOrderParserPlugins: [`["typescript", { "dts": true }]`],
-      },
-    },
-  ],
+  singleAttributePerLine: false,
 }
