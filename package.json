@@ -40,6 +40,9 @@
   "peerDependencies": {
     "prettier": "^3"
   },
+  "dependencies": {
+    "prettier-plugin-tailwindcss": "^0.6.5"
+  },
   "devDependencies": {
     "@types/jest": "^29.5.12",
     "eslint": "^8.57.0",

@@ -1,4 +1,5 @@
 export default {
+  // Options
   arrowParens: `avoid`,
   bracketSameLine: false,
   bracketSpacing: true,
@@ -15,4 +16,8 @@ export default {
   tabWidth: 2,
   trailingComma: `all`,
   useTabs: false,
+
+  // Plugins
+  plugins: [`prettier-plugin-tailwindcss`],
+  tailwindFunctions: [`clsx`],
 }
