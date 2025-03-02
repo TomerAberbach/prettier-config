@@ -18,6 +18,6 @@ export default {
   useTabs: false,
 
   // Plugins
-  plugins: [`prettier-plugin-tailwindcss`],
+  plugins: [import.meta.resolve(`prettier-plugin-tailwindcss`)],
   tailwindFunctions: [`clsx`],
 }
