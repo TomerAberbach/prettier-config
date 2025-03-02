@@ -1,3 +1,5 @@
+import { expect, test } from 'vitest'
+
 test(`prettier-config`, async () => {
   const config = await import(`../src/index.js`)
 

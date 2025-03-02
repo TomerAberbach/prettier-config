@@ -16,10 +16,10 @@ jobs:
         os: [ubuntu-latest]
       fail-fast: false
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Install Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.nodejs }}
 
@@ -30,10 +30,13 @@ jobs:
         run: pnpm install
 
       - name: Format
-        run: pnpm format -- --no-write
+        run: pnpm format --check
+
+      - name: Typecheck
+        run: pnpm typecheck
 
       - name: Lint
-        run: pnpm lint -- --no-fix
+        run: pnpm lint --no-fix
 
       - name: Test
-        run: pnpm test -- --coverage
+        run: pnpm test
