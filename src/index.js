@@ -1,3 +1,5 @@
+import { fileURLToPath } from 'node:url'
+
 export default {
   // Options
   arrowParens: `avoid`,
@@ -18,6 +20,6 @@ export default {
   useTabs: false,
 
   // Plugins
-  plugins: [import.meta.resolve(`prettier-plugin-tailwindcss`)],
+  plugins: [fileURLToPath(import.meta.resolve(`prettier-plugin-tailwindcss`))],
   tailwindFunctions: [`clsx`],
 }
