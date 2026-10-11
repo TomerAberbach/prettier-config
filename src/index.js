@@ -1,5 +1,6 @@
 import { fileURLToPath } from 'node:url'
 
+/** @type {import('prettier').Config} */
 export default {
   // Options
   arrowParens: `avoid`,

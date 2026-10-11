@@ -12,7 +12,10 @@
     "prettier-config"
   ],
   "homepage": "https://github.com/TomerAberbach/prettier-config",
-  "repository": "TomerAberbach/prettier-config",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TomerAberbach/prettier-config.git"
+  },
   "bugs": {
     "url": "https://github.com/TomerAberbach/prettier-config/issues"
   },
@@ -21,7 +24,8 @@
   },
   "license": "MIT",
   "files": [
-    "src"
+    "src",
+    "!src/**/*.test.ts"
   ],
   "type": "module",
   "sideEffects": false,
@@ -33,8 +37,15 @@
     "./package.json": "./package.json"
   },
   "scripts": {
-    "format": "prettier --cache --write .",
-    "lint": "eslint --cache --cache-location node_modules/.cache/eslint/ --fix ."
+    "format:base": "prettier --cache --write",
+    "format": "pnpm format:base .",
+    "lint:base": "eslint --cache --cache-location node_modules/.cache/eslint/ --fix",
+    "lint": "pnpm lint:base .",
+    "typecheck": "tsc --noEmit",
+    "knip": "knip",
+    "test": "vitest",
+    "coverage": "vitest --coverage",
+    "check": "run-p -c -l typecheck \"lint --no-fix\" \"format --no-write --check\" knip \"test --run\""
   },
   "prettier": "./src/index.js",
   "peerDependencies": {
@@ -45,8 +56,13 @@
   },
   "devDependencies": {
     "@tomer/eslint-config": "^5.1.1",
+    "@types/node": "^26.6.5",
+    "@vitest/coverage-v8": "^5.0.3",
     "eslint": "^10.12.0",
+    "knip": "^6.41.0",
+    "npm-run-all2": "^9.0.3",
     "prettier": "^3.9.10",
-    "typescript": "^6.0.3"
+    "typescript": "^6.0.3",
+    "vitest": "^5.0.3"
   }
 }
