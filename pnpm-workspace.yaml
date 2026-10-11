@@ -2,3 +2,5 @@ shellEmulator: true
 onlyBuiltDependencies:
   - esbuild
   - unrs-resolver
+overrides:
+  katex@>=0.11.0 <0.18.2: ^0.18.2
